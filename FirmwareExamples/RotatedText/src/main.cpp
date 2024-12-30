@@ -59,7 +59,9 @@ void loop() {
     matrix->clear();
 
     // set color for matrix first
-    setMatrix();
+    if (pos % 241 != 0) {
+        setMatrix();
+    }
 
     // set eye, horn, scarfs
     if (pos % 137 != 0) {
